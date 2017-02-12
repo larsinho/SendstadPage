@@ -278,7 +278,7 @@ strong, small {
     height: 100%;
     position: absolute;
     overflow: hidden;
-    background: url(../images/1920X1080.gif) #333 40% 40%;
+    background: url(../images/BergenNight.jpg) #333 40% 40%;
     background-size: cover;
 }
 
@@ -992,13 +992,13 @@ ul.info-list li strong {
     color: #fff;
 }
 
-.pagination > li:first-child > a, 
+.pagination > li:first-child > a,
 .pagination > li:first-child > span {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
 
-.pagination > li:last-child > a, 
+.pagination > li:last-child > a,
 .pagination > li:last-child > span {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -1321,14 +1321,14 @@ ul.info-list li strong {
 
 /* -------------------------
         8. CONTENT BLOCKS
-------------------------- */ 
+------------------------- */
 .inline-menu-container {
     background: #F1F3F6;
     position: fixed;
     width: 70%;
     left: 30%;
     z-index: 99999;
-} 
+}
 
 #post-modal .inline-menu-container,
 #project-modal .inline-menu-container {
@@ -1407,7 +1407,7 @@ ul.info-list li strong {
 
 /* -------------------------
         9. RESPONSIVE
-------------------------- */ 
+------------------------- */
 @media (min-width:1920px) {
     .name-block {
         -ms-transform: rotate(-34deg);
@@ -1461,7 +1461,7 @@ ul.info-list li strong {
 	.inline-menu-container {
 		width: 880px;
 		left: 700px;
-	} 
+	}
 }
 
 @media (min-width:1280px) and (max-width:1919px) {
@@ -1642,7 +1642,7 @@ ul.info-list li strong {
         left: 9px;
         top: 780px;
     }
-	
+
 	.project {
 		width: 50%;
     }
@@ -1688,7 +1688,7 @@ ul.info-list li strong {
         margin-bottom: 0;
         display: block;
     }
-	
+
 	h2.menu-item:after {
 		position: absolute;
 		content: '';
@@ -1704,7 +1704,7 @@ ul.info-list li strong {
         position: relative;
         margin: 50px 0;
     }
-	
+
 	#post-modal,
 	#project-modal,
     .content-blocks {
@@ -1716,7 +1716,7 @@ ul.info-list li strong {
 	.inline-menu-container {
 		width: 100%;
 		left: 0;
-	}	
+	}
 }
 
 @media (max-width:768px) {
@@ -1759,7 +1759,7 @@ ul.info-list li strong {
         margin-bottom: 0;
         display: block;
     }
-	
+
 	h2.menu-item:after {
 		position: absolute;
 		content: '';
@@ -1775,7 +1775,7 @@ ul.info-list li strong {
         position: relative;
         margin: 50px 0;
     }
-	
+
 	#post-modal,
 	#project-modal,
     .content-blocks {
@@ -1826,7 +1826,7 @@ ul.info-list li strong {
     .social {
         display: none;
     }
-	
+
 	.project {
 		width: 100%;
     }
