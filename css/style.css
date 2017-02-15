@@ -716,7 +716,7 @@ ul.info-list li strong {
         5. PORTFOLIO BLOCK
 ------------------------- */
 .portfolio-block {
-    position: absolute;
+    position: absolute;;  /* this control the placement on the main page */
     width: 430px;
     height: 400px;
     border: 1px solid rgba(255,255,255,0.4);
@@ -810,9 +810,9 @@ ul.info-list li strong {
 
 .project {
     position: relative;
-    width: 33.22222233%;
+    width: 30.0%;
     float: left;
-    overflow: hidden;
+    overflow: visible; /* changed from hidden */
 }
 
 .vcenter {
