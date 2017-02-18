@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title> Sendstad | Chronopoulos </title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="icon" href="images/favicon.ico"/>
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/animate.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+
+</head>
+<body>
+
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+	</script>
+	<script src="plotly-latest.min.js"></script>
+
+
+	<div class="preloader">
+			<div class="spinner"><strong>Loading...<i class="fa-li fa fa-spinner fa-spin"></i></strong></div>
+
+	</div>
+	<div class="preloader-left"></div>
+	<div class="preloader-right"></div>
+
+	<div class="inline-menu-container hidex">
+
+		<ul class="inline-menu">
+			<li class="about menu-item">Competition</li>
+			<li class="portfolio menu-item">Risk aversion</li>
+			<li class="blog menu-item">Technological uncertainty</li>
+			<li class="contact menu-item">Leapfrog and Laggard</li>
+			<li id="close">&times;</li>
+		</ul>
+
+	</div>
+
+<section class="home">
+            <div class="container">
+		<div class="name-block">
+			<div class="name-block-container">
+				<h1><span>Geilo Presentation</span>Strategic Technology Switching
+					</h1>
+        <h2> under Risk Aversion and
+						Uncertainty
+				</h2>
+			</div>
+		</div>
+		<div class="menu-blocks">
+			<div class="about-block">
+				<div class="about-block-container">
+					<h2 class="about menu-item">Risk aversion</h2>
+				</div>
+			</div>
+			<div class="portfolio-block">
+				<div class="portfolio-block-container">
+					<h2 class="portfolio menu-item">Competition</h2>
+				</div>
+			</div>
+			<div class="blog-block">
+				<div class="blog-block-container">
+					<h2 class="blog menu-item">Technological uncertainty</h2>
+				</div>
+			</div>
+			<div class="contact-block">
+				<div class="contact-block-container">
+					<h2 class="contact menu-item">Leapfrog and laggard</h2>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="content-blocks about hidex">
+
+			<section class="content">
+
+				<div class="block-content">
+					<h3 class="block-title">Risk aversion</h3>
+					<div class="row">
+
+						<div id="welcomeDiv"  style="visibility:hidden;" class="answer_list" >
+						<div class="col-md-7 myContent">
+							<p class="myContent">
+								<ol>
+								  <li type="square">Managerial risk aversion reduces investments (Panousi and Papanikolaou, 2012)</li>
+									<li type="square">Risk-aversion delays investment (Hugonier and Morellec, 2013)</li>
+									 <ul>
+										<li type="circle">Idiosyncratic risk induces agency problems</li>
+										<li type="circle">Poorly diversified managers may reduce investments when uncertainty increases</li>
+										<li type="circle">Nascent markets</li>
+										<div id="tester" style="width:600px;height:250px;"></div>
+									</ul>
+								</ol>
+							</p>
+							</div>
+							<!--<div id="tester" style="width:600px;height:250px;"></div> -->
+						</div>
+						<div>
+							<a class="btn myButton">next</a> 
+						</div>
+			</section>
+
+		</div>
+
+		<div class="content-blocks portfolio hidex">
+
+			<section class="content">
+
+				<div class="block-content">
+					<h3 class="block-title">Portfolio</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+								<ol>
+								  <li type="square"> Competition and frequent technological innovation may render you  obsolete	</li>
+								  <li type="square">Although technological innovations present opportunities, the presence of a rival reduces flexibility</li>
+								  <li type="square">Proprietary  or non-proprietary competition (third-party solutions) alters the adoption strategy</li>
+									 <ul>
+										<li type="circle">Proprietary: patent protection in the pharmaceutical industry, telecommunication, etc.</li>
+										<li type="circle">Non-proprietary: adopting Android, solar panels, etc.</li>
+									</ul>
+								</ol>
+							</p>
+							<ul id="filters">
+							  <li class="active" data-filter="*">All</li>
+							  <li data-filter=".tech">Technological uncertainty</li>
+							  <li data-filter=".policy">Politcal risk</li>
+							  <li data-filter=".competition">Competition</li>
+							  <li data-filter=".regime">Regime switching</li>
+							</ul>
+							<div id="projects">
+
+									<div class="project tech policy">
+									<a class="open-project" href="project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>First Project</h4>
+													<p>Political and technological risk</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/windPower.jpg" alt="">
+								  </div>
+
+									<div class="project tech competition">
+									<a class="open-project" href="project-2.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Second Project</h4>
+													<p>Competition and technological uncertainty</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/competition.jpg" alt="">
+								  </div>
+
+									<div class="project tech regime">
+									<a class="open-project" href="project-3.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Third Project</h4>
+													<p>Regime switching and capacity sizing</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/bigdata.jpg" alt="">
+								  </div>
+									<!-- More projects that can be added
+								  <div class="project graphic">
+									<a class="open-project" href="project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4></h4>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/727x500.gif" alt="">
+								  </div>
+								  <div class="project web video">
+									<a class="open-project" href="project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Typewriter</h4>
+													<p>Graphic / Video</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/727x1000.gif" alt="">
+								  </div>
+								  <div class="project apps web">
+									<a class="open-project" href="project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Magazine Cover</h4>
+													<p>Web / Apps</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/727x500.gif" alt="">
+								  </div>
+								  <div class="project video web">
+									<a class="open-project" href="project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>An Ipad</h4>
+													<p>Video / Web</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/727x500.gif" alt="">
+								  </div>
+								-->
+							</div>
+						</div>
+					</div>
+
+					<!--
+					<div class="row text-center">
+						<div class="col-md-12">
+							<h4>Interested in working together?</h4>
+							<a class="btn lowercase">lars.sendstad@nhh.no</a><br/>
+						</div>
+					</div>
+				</div>
+			-->
+
+			</section>
+		</div>
+
+		<div class="content-blocks blog hidex">
+
+			<section class="content">
+				<div class="block-content">
+					<h3 class="block-title">My Blog</h3>
+					<p> Coming soon </p>
+					<div class="col-md-10 col-md-offset-1">
+							<div class="post">
+									<!--
+								<div class="post-thumbnail">
+
+									<a class="open-post" href="post-single.html">
+										<img src="images/blog/1920X1080.gif" alt="">
+									</a>
+								</div>
+
+								<div class="post-title">
+									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
+									<a class="btn open-post" href="post-single.html">Read More</a>
+								</div>
+
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="post-single.html">
+										<img src="images/blog/1920X1080.gif" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
+									<a class="btn open-post" href="post-single.html">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="post-single.html">
+										<img src="images/blog/1920X1080.gif" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
+									<a class="btn open-post" href="post-single.html">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="post-single.html">
+										<img src="images/blog/1920X1080.gif" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
+									<a class="btn open-post" href="post-single.html">Read More</a>
+								</div>
+							</div>
+
+						<div class="text-center">
+							<ul class="pagination">
+								<li>
+								  <a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								  </a>
+								</li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li>
+								  <a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								  </a>
+								</li>
+							</ul>
+						</div>
+						-->
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="content-blocks contact hidex">
+
+			<section class="content">
+				<div class="block-content">
+					<h3 class="block-title">Get in touch</h3>
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Address</h5>
+									<p>Furubotn 32, 5101 Eidsvågneset</p>
+								</div>
+							</div>
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Call Us</h5>
+									<p> +47 - 90079117</p>
+								</div>
+							</div>
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Enquiries</h5>
+									<p>lars.sendstad@nhh.no</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+								<form method="POST" action="php/contact_me.php" id="formcontactus" class="" >
+								  <div class="form-group">
+									<input name="name" type="text" class="form-control requiretop" placeholder="* Your Name" />
+								  </div>
+								  <div class="form-group">
+									<input name="email" type="email" class="form-control requiretop" placeholder="* Your Email" />
+								  </div>
+								  <div class="form-group">
+									<textarea rows="6" name="message" class="form-control requiretop" placeholder="* Your Message"></textarea>
+								  </div>
+								  <div class="form-group">
+									<button type="submit" class="btn btn-dark selected">Send Message</button>
+								  </div>
+								</form>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+
+
+	</div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+ </body>
+</html>
