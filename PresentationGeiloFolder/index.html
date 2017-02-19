@@ -11,22 +11,18 @@
 	<meta name="author" content="" />
 	<link rel="icon" href="images/favicon.ico"/>
 
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'/>
+	 <!--<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'/>  -->
+	<link rel='stylesheet' href='css/googleFont.css' type='text/css'>
+
+
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="css/animate.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 
+
 </head>
 <body>
-
-	<script type="text/x-mathjax-config">
-	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-	</script>
-	<script type="text/javascript" async
-	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-	</script>
-	<script src="plotly-latest.min.js"></script>
 
 
 	<div class="preloader">
@@ -39,7 +35,7 @@
 	<div class="inline-menu-container hidex">
 
 		<ul class="inline-menu">
-			<li class="about menu-item">Competition</li>
+			<li class="about menu-item">Competition </li>
 			<li class="portfolio menu-item">Risk aversion</li>
 			<li class="blog menu-item">Technological uncertainty</li>
 			<li class="contact menu-item">Leapfrog and Laggard</li>
@@ -91,25 +87,36 @@
 					<h3 class="block-title">Risk aversion</h3>
 					<div class="row">
 
-						<div id="welcomeDiv"  style="visibility:hidden;" class="answer_list" >
-						<div class="col-md-7 myContent">
-							<p class="myContent">
+						<div class="w3-content" style="max-width:800px">
+							<div class="mySlides" style="width:100%">
 								<ol>
-								  <li type="square">Managerial risk aversion reduces investments (Panousi and Papanikolaou, 2012)</li>
+									<li type="square">Managerial risk aversion reduces investments (Panousi and Papanikolaou, 2012)</li>
 									<li type="square">Risk-aversion delays investment (Hugonier and Morellec, 2013)</li>
 									 <ul>
 										<li type="circle">Idiosyncratic risk induces agency problems</li>
 										<li type="circle">Poorly diversified managers may reduce investments when uncertainty increases</li>
-										<li type="circle">Nascent markets</li>
-										<div id="tester" style="width:600px;height:250px;"></div>
+										<li type="circle">Nascent markets When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+												$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</li>
 									</ul>
 								</ol>
-							</p>
 							</div>
-							<!--<div id="tester" style="width:600px;height:250px;"></div> -->
+							<div class="mySlides" style="width:100%">
+									<div id="Phi2_follow" style="width:600px;height:500px;"></div>
+									<span id="valBox"></span>
+									<input type="range" id="myRange" min="0.5" max="1.5" step="0.01"
+									   oninput="sliderFunction(this.value)" onchange="sliderFunction(this.value)">
+							</div>
+							<div class="mySlides" style="width:100%"> 3</div>
 						</div>
-						<div>
-							<a class="btn myButton">next</a> 
+
+						<div class="w3-center">
+							<div class="w3-section">
+								<button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+								<button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+							</div>
+							<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+							<button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+							<button class="w3-btn demo" onclick="currentDiv(3)">3</button>
 						</div>
 			</section>
 
@@ -120,138 +127,16 @@
 			<section class="content">
 
 				<div class="block-content">
-					<h3 class="block-title">Portfolio</h3>
+					<h3 class="block-title">Competition</h3>
 					<div class="row">
 						<div class="col-md-12">
 							<p>
-								<ol>
-								  <li type="square"> Competition and frequent technological innovation may render you  obsolete	</li>
-								  <li type="square">Although technological innovations present opportunities, the presence of a rival reduces flexibility</li>
-								  <li type="square">Proprietary  or non-proprietary competition (third-party solutions) alters the adoption strategy</li>
-									 <ul>
-										<li type="circle">Proprietary: patent protection in the pharmaceutical industry, telecommunication, etc.</li>
-										<li type="circle">Non-proprietary: adopting Android, solar panels, etc.</li>
-									</ul>
-								</ol>
+
 							</p>
-							<ul id="filters">
-							  <li class="active" data-filter="*">All</li>
-							  <li data-filter=".tech">Technological uncertainty</li>
-							  <li data-filter=".policy">Politcal risk</li>
-							  <li data-filter=".competition">Competition</li>
-							  <li data-filter=".regime">Regime switching</li>
-							</ul>
-							<div id="projects">
-
-									<div class="project tech policy">
-									<a class="open-project" href="project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>First Project</h4>
-													<p>Political and technological risk</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/windPower.jpg" alt="">
-								  </div>
-
-									<div class="project tech competition">
-									<a class="open-project" href="project-2.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Second Project</h4>
-													<p>Competition and technological uncertainty</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/competition.jpg" alt="">
-								  </div>
-
-									<div class="project tech regime">
-									<a class="open-project" href="project-3.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Third Project</h4>
-													<p>Regime switching and capacity sizing</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/bigdata.jpg" alt="">
-								  </div>
-									<!-- More projects that can be added
-								  <div class="project graphic">
-									<a class="open-project" href="project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4></h4>
-													<p></p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/727x500.gif" alt="">
-								  </div>
-								  <div class="project web video">
-									<a class="open-project" href="project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Typewriter</h4>
-													<p>Graphic / Video</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/727x1000.gif" alt="">
-								  </div>
-								  <div class="project apps web">
-									<a class="open-project" href="project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Magazine Cover</h4>
-													<p>Web / Apps</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/727x500.gif" alt="">
-								  </div>
-								  <div class="project video web">
-									<a class="open-project" href="project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>An Ipad</h4>
-													<p>Video / Web</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/727x500.gif" alt="">
-								  </div>
-								-->
-							</div>
 						</div>
 					</div>
 
-					<!--
-					<div class="row text-center">
-						<div class="col-md-12">
-							<h4>Interested in working together?</h4>
-							<a class="btn lowercase">lars.sendstad@nhh.no</a><br/>
-						</div>
 					</div>
-				</div>
-			-->
-
 			</section>
 		</div>
 
@@ -448,5 +333,9 @@
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
 <script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/plotly-latest.min.js"></script>
+<script type="text/javascript" src="js/myPlotly.js"></script>
+<script type="text/javascript" async src="/MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
  </body>
 </html>

@@ -1,23 +1,38 @@
 
 
 
-// My Plotly graph
-TESTER = document.getElementById('tester');
-Plotly.plot( TESTER, [{
-x: [1, 2, 3, 4, 5],
-y: [1, 2, 4, 8, 16] }], {
-margin: { t: 0 } } );
 
-//On Click in risk aversion
-$(".myButton").click(function(){
-    //$(".myContent").remove();
-    console.log("working");
-    document.getElementById('welcomeDiv').style.visibility = "visible";
-    //$('.myButton').remove();
-    //var r= $('<input type="button" value="new button"/>');
-    //$("body").append('btn');
 
-});
+
+// -------------------------Buttons for next--------------------------//
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
 
 
 //function showDiv() {
