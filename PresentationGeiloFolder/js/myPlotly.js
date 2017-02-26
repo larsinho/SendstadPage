@@ -76,9 +76,7 @@ y: Phi2_follow, }], {
 margin: { t: 0 } } );
 
 
-function sliderFunction() {
-    var x = document.getElementById("myRange").value;
-
+function sliderFunction(x) {
     [Phi2_follow, F12_follow] = fun_Phi1F12_follow(x)
     var update = {y: Phi2_follow};
     var update = {
@@ -86,6 +84,28 @@ function sliderFunction() {
     'marker.color': 'red'
     };
     Plotly.restyle(TESTER,  {y: [Phi2_follow]})
-    console.log(Phi2_follow);
+    //console.log(Phi2_follow);
     // My Plotly graph
 }
+
+// -------------------------------
+// Slider
+
+
+var initialValue = 1;
+
+var sliderTooltip = function(event, ui) {
+    var curValue = ui.value || initialValue;
+    $('.valueBox').html(curValue);
+     sliderFunction(curValue)
+
+}
+
+$("#slider").slider({
+    value: initialValue,
+    min: 0.5,
+    max: 1.5,
+    step: 0.05,
+    create: sliderTooltip,
+    slide: sliderTooltip
+});

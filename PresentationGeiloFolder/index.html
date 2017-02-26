@@ -35,8 +35,8 @@
 	<div class="inline-menu-container hidex">
 
 		<ul class="inline-menu">
-			<li class="about menu-item">Competition </li>
-			<li class="portfolio menu-item">Risk aversion</li>
+			<li class="about menu-item">Risk aversion </li>
+			<li class="portfolio menu-item">Competition</li>
 			<li class="blog menu-item">Technological uncertainty</li>
 			<li class="contact menu-item">Leapfrog and Laggard</li>
 			<li id="close">&times;</li>
@@ -102,16 +102,15 @@
 							</div>
 							<div class="mySlides" style="width:100%">
 									<div id="Phi2_follow" style="width:600px;height:500px;"></div>
-									<span id="valBox"></span>
-									<input type="range" id="myRange" min="0.5" max="1.5" step="0.01"
-									   oninput="sliderFunction(this.value)" onchange="sliderFunction(this.value)">
+									<div class="sliders" id="slider"></div>
+									<div class="valueBox"></div>
 							</div>
 							<div class="mySlides" style="width:100%"> 3</div>
 						</div>
 
 						<div class="w3-center">
 							<div class="w3-section">
-								<button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+								<button class="w3-btn" onclick="plusDivs(-1)	">❮ Prev</button>
 								<button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
 							</div>
 							<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
@@ -148,114 +147,6 @@
 					<p> Coming soon </p>
 					<div class="col-md-10 col-md-offset-1">
 							<div class="post">
-									<!--
-								<div class="post-thumbnail">
-
-									<a class="open-post" href="post-single.html">
-										<img src="images/blog/1920X1080.gif" alt="">
-									</a>
-								</div>
-
-								<div class="post-title">
-									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by John Sparrow</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 08, 2015</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Food</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
-									<a class="btn open-post" href="post-single.html">Read More</a>
-								</div>
-
-							</div>
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="post-single.html">
-										<img src="images/blog/1920X1080.gif" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by John Sparrow</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 08, 2015</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Food</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
-									<a class="btn open-post" href="post-single.html">Read More</a>
-								</div>
-							</div>
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="post-single.html">
-										<img src="images/blog/1920X1080.gif" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by John Sparrow</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 08, 2015</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Food</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
-									<a class="btn open-post" href="post-single.html">Read More</a>
-								</div>
-							</div>
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="post-single.html">
-										<img src="images/blog/1920X1080.gif" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by John Sparrow</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 08, 2015</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Food</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>
-									<a class="btn open-post" href="post-single.html">Read More</a>
-								</div>
-							</div>
-
-						<div class="text-center">
-							<ul class="pagination">
-								<li>
-								  <a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								  </a>
-								</li>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
-								<li>
-								  <a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								  </a>
-								</li>
-							</ul>
-						</div>
-						-->
 					</div>
 				</div>
 			</section>
@@ -325,9 +216,11 @@
 	</div>
 </section>
 
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
@@ -335,7 +228,10 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/plotly-latest.min.js"></script>
 <script type="text/javascript" src="js/myPlotly.js"></script>
+<script type="text/javascript" src="js/myButtonsAndSlider.js"></script>
+
 <script type="text/javascript" async src="/MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
  </body>
 </html>
