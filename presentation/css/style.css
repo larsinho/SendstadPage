@@ -280,7 +280,7 @@ strong, small {
     height: 100%;
     position: absolute;
     overflow: hidden;
-    background: url(../images/background2.jpg) #333 40% 40%;
+    background: url(../images/background.jpg) #333 40% 40%;
     background-size: cover;
 }
 
