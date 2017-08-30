@@ -19,30 +19,7 @@ var  sigma2_2d;
 var  S0_vector;
 
 
-    $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
-        value_regime1_analytical = json;
-    });
-    $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
-        value_regime1_numerical = json;
-    });
-    $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
-        value_regime2_analytical = json;
-    });
-    $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
-        value_regime2_numerical = json;
-    });
-    $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
-        sigma1_2d = json;
-    });
-    $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
-        sigma2_2d = json;
-    });
-    $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
-        S0_vector = json;
-    });
 
-
-$(document).ready(function() {
     /*
     new_array[temp_i][jj] = arr_temp;
     */
@@ -192,5 +169,3 @@ $(document).ready(function() {
         }
     ],
     layout );
-
-});​
