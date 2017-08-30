@@ -15,22 +15,22 @@ $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", func
     value_regime1_analytical = json;
     console.log(value_regime1_analytical)
 });
-$.getJSON("../SubPlottingScripts/value_regime1_numerical.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
     value_regime1_numerical = json;
 });
-$.getJSON("../SubPlottingScripts/value_regime2_analytical.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
     value_regime2_analytical = json;
 });
-$.getJSON("../SubPlottingScripts/value_regime2_numerical.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
     value_regime2_numerical = json;
 });
-$.getJSON("../SubPlottingScripts/sigma1_2d.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
     sigma1_2d = json;
 });
-$.getJSON("../SubPlottingScripts/sigma2_2d.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
     sigma2_2d = json;
 });
-$.getJSON("../SubPlottingScripts/S0_vector.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
     S0_vector = json;
 });
 
