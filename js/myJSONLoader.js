@@ -11,11 +11,27 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
-$.getJSON("SubPlottingScripts/value_regime1_analytical.json", function(json) {
+$.getJSON("../SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
-    console.log(value_regime1_analytical); // this will show the info it in firebug console
 });
-
+$.getJSON("../SubPlottingScripts/value_regime1_numerical.json", function(json) {
+    value_regime1_numerical = json;
+});
+$.getJSON("../SubPlottingScripts/value_regime2_analytical.json", function(json) {
+    value_regime2_analytical = json;
+});
+$.getJSON("../SubPlottingScripts/value_regime2_numerical.json", function(json) {
+    value_regime2_numerical = json;
+});
+$.getJSON("../SubPlottingScripts/sigma1_2d.json", function(json) {
+    sigma1_2d = json;
+});
+$.getJSON("../SubPlottingScripts/sigma2_2d.json", function(json) {
+    sigma2_2d = json;
+});
+$.getJSON("../SubPlottingScripts/S0_vector.json", function(json) {
+    S0_vector = json;
+});
 
 /*
 $.ajax({
