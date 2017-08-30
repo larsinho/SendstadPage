@@ -7,15 +7,40 @@ var scriptSize = 20
 // follower 12
 //---------------------
 
-/*
+
 var  value_regime1_analytical;
 var  value_regime1_numerical;
 var  value_regime2_analytical;
 var  value_regime2_numerical;
 var  sigma1_3d;
 var  sigma2_3d;
+var  sigma1_2d;
+var  sigma2_2d;
 var  S0_vector;
-*/
+
+(function MainFunction(sigma1, sigma2) {
+
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
+    value_regime1_analytical = json;
+});
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
+    value_regime1_numerical = json;
+});
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
+    value_regime2_analytical = json;
+});
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
+    value_regime2_numerical = json;
+});
+$.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
+    sigma1_2d = json;
+});
+$.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
+    sigma2_2d = json;
+});
+$.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
+    S0_vector = json;
+});
 
 
 /*
@@ -39,7 +64,7 @@ function fun_value(sigma1, sigma2) {
     var eps1 = 0;
     var eps2 = 0;
     return [arr_reg1_analytical, arr_reg1_numerical, arr_reg2_analytical, arr_reg2_numerical, eps1, eps2]
-}
+};
 
 
 // ------------------------- Slider--------------------------//
@@ -167,3 +192,6 @@ Plotly.newPlot(htmlElementAversion, [{
     }
 ],
 layout );
+
+
+};)();

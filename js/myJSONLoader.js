@@ -1,6 +1,9 @@
 
 
 
+/*
+
+
 var  value_regime1_analytical;
 var  value_regime1_numerical;
 var  value_regime2_analytical;
@@ -13,7 +16,6 @@ var  S0_vector;
 
 $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
-    console.log(value_regime1_analytical)
 });
 $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
     value_regime1_numerical = json;
@@ -34,7 +36,7 @@ $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
     S0_vector = json;
 });
 
-/*
+
 $.ajax({
   url: "/SubPlottingScripts/value_regime1_analytical.json",
   async: false,
