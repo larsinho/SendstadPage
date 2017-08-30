@@ -194,4 +194,4 @@ Plotly.newPlot(htmlElementAversion, [{
 layout );
 
 
-};)();
+})();
