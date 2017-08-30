@@ -171,4 +171,4 @@ var  S0_vector;
     layout );
 
 
-    document.getElementById("newsletter").style.padding = "30px 30px 30px 100px";
+    document.getElementById("newsletter").style.padding = "30px 30px 30px 30px";
