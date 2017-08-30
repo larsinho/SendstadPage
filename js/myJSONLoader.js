@@ -11,7 +11,7 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
-$.getJSON("../SubPlottingScripts/value_regime1_analytical.json", function(json) {
+$.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
     console.log(value_regime1_analytical)
 });
