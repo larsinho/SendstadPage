@@ -18,7 +18,7 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
-(function MainFunction(sigma1, sigma2) {
+function MainFunction(sigma1, sigma2) {
 
 $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
@@ -194,4 +194,4 @@ Plotly.newPlot(htmlElementAversion, [{
 layout );
 
 
-})();
+};
