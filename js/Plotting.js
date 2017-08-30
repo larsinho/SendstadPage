@@ -18,7 +18,6 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
-function MainFunction() {
 
     $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
         value_regime1_analytical = json;
@@ -43,6 +42,7 @@ function MainFunction() {
     });
 
 
+$(document).ready(function() {
     /*
     new_array[temp_i][jj] = arr_temp;
     */
@@ -193,7 +193,4 @@ function MainFunction() {
     ],
     layout );
 
-
-};
-
-MainFunction();
+});​
