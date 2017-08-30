@@ -11,6 +11,12 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
+$.getJSON("value_regime1_analytical.json", function(json) {
+    value_regime1_analytical = json;
+    console.log(value_regime1_analytical); // this will show the info it in firebug console
+});
+
+
 /*
 $.ajax({
   url: "/SubPlottingScripts/value_regime1_analytical.json",
