@@ -11,10 +11,10 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
-
+/*
 $.ajax({
   url: "/SubPlottingScripts/value_regime1_analytical.json",
-  async: true,
+  async: false,
   dataType: 'json',
   success: function (response) {
     value_regime1_analytical = response;
@@ -22,7 +22,7 @@ $.ajax({
 });
 $.ajax({
   url: "/SubPlottingScripts/value_regime1_numerical.json",
-  async: true,
+  async: false,
   dataType: 'json',
   success: function (response) {
     value_regime1_numerical = response;
@@ -102,3 +102,4 @@ $.ajax({
     sigma1_2d = response;
   }
 });
+*/
