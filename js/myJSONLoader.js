@@ -14,7 +14,7 @@ var  S0_vector;
 
 $.ajax({
   url: "/SubPlottingScripts/value_regime1_analytical.json",
-  async: false,
+  async: true,
   dataType: 'json',
   success: function (response) {
     value_regime1_analytical = response;
@@ -22,7 +22,7 @@ $.ajax({
 });
 $.ajax({
   url: "/SubPlottingScripts/value_regime1_numerical.json",
-  async: false,
+  async: true,
   dataType: 'json',
   success: function (response) {
     value_regime1_numerical = response;
