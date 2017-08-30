@@ -89,7 +89,7 @@ var  S0_vector;
         Plotly.addTraces(htmlElementAversion, [{
                 x: S0_vector,
                 y: arr_reg1_analytical,
-                name: "Regime 1, Analytical_"
+                name: "Regime 1, Analytical"
             },
             {
                 x: S0_vector,
