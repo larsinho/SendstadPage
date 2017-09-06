@@ -54,7 +54,7 @@ function fun_3dPlot() {
         paper_bgcolor: 'rgba(0,0,0,0.0)',
         plot_bgcolor: 'rgba(0,0,0,0.0)'
     }
-    Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3], layout);
+    Plotly.newPlot('myDiv', [data_z1], layout);
 
 
     // ---------------- 2D Plot -----------------------//
