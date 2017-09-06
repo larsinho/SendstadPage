@@ -32,7 +32,7 @@ function fun_3dPlot() {
                             y:sigma1_3d,
                             x:sigma2_3d,
                             showscale: false,
-                            opacity:0.99,
+                            opacity:1,
                             type: 'surface',
                             colorscale: 'Reds',
                            showscale: false};
