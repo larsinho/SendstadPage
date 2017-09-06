@@ -78,6 +78,26 @@ function fun_3dPlot() {
         paper_bgcolor: 'rgba(0,0,0,0.0)',
         plot_bgcolor: 'rgba(0,0,0,0.0)'
     }
+
+    var layout = {
+      title: 'Mt Bruno Elevation',
+      autosize: false,
+      width: 500,
+      height: 500,
+      margin: {
+        l: 65,
+        r: 50,
+        b: 65,
+        t: 90,
+        },
+        font: {
+            color: "white"
+        },
+        paper_bgcolor: 'rgba(0,0,0,0.0)',
+        plot_bgcolor: 'rgba(0,0,0,0.0)'
+        }
+        };
+
     Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3, data_z4], layout);
 
     document.getElementById("newsletter").style.padding = "30px 30px 120px 30px";
