@@ -39,8 +39,6 @@ function fun_3dPlot() {
     var data_z2 = {z: z2, showscale: false, opacity:0.9, type: 'surface'};
     var data_z3 = {z: z3, showscale: false, opacity:0.9, type: 'surface'};
 
-
-
     Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3]);
 
     var sigma1 = 0.25
