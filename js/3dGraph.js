@@ -36,8 +36,8 @@ function fun_3dPlot() {
         z3.push(z3_row);
     }
     var data_z1 = {z: value_regime1_analytical,
-                             y: sigma1_2d,
-                             x: sigma2_2d,
+                             y: sigma2_2d,
+                             x: sigma1_2d,
                              type: 'surface'};
     var data_z2 = {z: z2, showscale: false, opacity:0.9, type: 'surface'};
     var data_z3 = {z: z3, showscale: false, opacity:0.9, type: 'surface'};
