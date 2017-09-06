@@ -31,11 +31,19 @@ function fun_3dPlot() {
     var data_z3 = {z: matrixLoop(value_regime2_analytical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
-                             showscale: false, opacity:1, type: 'surface'};
+                            showscale: false,
+                            opacity:0.99,
+                            type: 'surface',
+                            colorscale: 'Reds',
+                           showscale: false};
     var data_z4 = {z: matrixLoop(value_regime2_numerical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
-                            showscale: false, opacity:1, type: 'surface'};
+                            showscale: false,
+                            opacity:0.99,
+                            type: 'surface',
+                            colorscale: 'Reds',
+                           showscale: false};
     var layout = {
         xaxis: {
             title: 'Sigma 1'
