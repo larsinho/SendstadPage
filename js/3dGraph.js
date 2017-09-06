@@ -86,7 +86,9 @@ function fun_3dPlot() {
       height: 500,
       paper_bgcolor: 'rgba(0,0,0,0.0)',
       plot_bgcolor: 'rgba(0,0,0,0.0)',
-      font: {color: "white"},
+      font: {
+          color: "white"
+      },
       margin: {
         l: 65,
         r: 50,
