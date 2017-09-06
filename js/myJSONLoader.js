@@ -15,6 +15,9 @@ var  S0_vector;
 
 
 
+
+/*
+
 $.ajax({
   url: "/SendstadPage/SubPlottingScripts/value_regime1_analytical.json",
   async: false,
@@ -106,7 +109,7 @@ $.ajax({
   }
 });
 
-/*
+
 
 $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
