@@ -1,5 +1,5 @@
 function fun_3dPlot() {
-    /*
+
     z1 = [
         [8.83,8.89,8.81,8.87,8.9,8.87],
         [8.89,8.94,8.85,8.94,8.96,8.92],
@@ -42,7 +42,7 @@ function fun_3dPlot() {
 
 
     Plotly.newPlot('example', [data_z1, data_z2, data_z3]);
-    */
+
     var sigma1 = 0.25
     var sigma2 = 0.25
 
