@@ -40,15 +40,12 @@ function fun_3dPlot() {
     var data_z3 = {z: z3, showscale: false, opacity:0.9, type: 'surface'};
     var layout = {
         xaxis: {
-            title: 'Output price, E',
-            size: scriptSize,
+            title: 'Sigma 1'
         },
         yaxis: {
-            title: 'Option value',
-            size: scriptSize
+            title: 'Sigma 2'
         },
         font: {
-            size: scriptSize,
             color: "white"
         },
         paper_bgcolor: 'rgba(0,0,0,0.0)',
