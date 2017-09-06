@@ -44,24 +44,11 @@ function fun_3dPlot() {
                             type: 'surface',
                             colorscale: 'Reds',
                            showscale: false};
-    var layout = {
-        xaxis: {
-            title: 'Sigma 1'
-        },
-        yaxis: {
-            title: 'Sigma 2'
-        },
-        font: {
-            color: "white"
-        },
-        paper_bgcolor: 'rgba(0,0,0,0.0)',
-        plot_bgcolor: 'rgba(0,0,0,0.0)'
-    }
+
 
     var layout = {
-      title: 'Mt Bruno Elevation',
       autosize: false,
-      width: 500,
+      width: $(window).width(),
       height: 500,
       paper_bgcolor: 'rgba(0,0,0,0.0)',
       plot_bgcolor: 'rgba(0,0,0,0.0)',
