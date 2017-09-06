@@ -22,7 +22,7 @@ var sigma2_2d;
 var S0_vector;
 
 
-function fun_main() {
+function fun_2dPlot() {
     /*
     new_array[temp_i][jj] = arr_temp;
     */
@@ -198,5 +198,5 @@ var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", func
 // executes code when all JSON files are received
 Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7]).then(
   function(){
-      fun_main();
+      fun_2dPlot();
   });
