@@ -48,7 +48,7 @@ function fun_3dPlot() {
                             colorscale: 'Reds',
                            showscale: false};
 
-   tot_width = $(window).width();
+   tot_width = $(window).width()*0.8;
     var layout = {
       autosize: false,
       width: tot_width,
