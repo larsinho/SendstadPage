@@ -41,7 +41,7 @@ function fun_3dPlot() {
 
 
 
-    Plotly.newPlot('example', [data_z1, data_z2, data_z3]);
+    Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3]);
 
     var sigma1 = 0.25
     var sigma2 = 0.25
