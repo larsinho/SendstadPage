@@ -1,3 +1,6 @@
+
+var tot_width
+
 function fun_3dPlot() {
 
 
@@ -45,10 +48,10 @@ function fun_3dPlot() {
                             colorscale: 'Reds',
                            showscale: false};
 
-
+   tot_width = $(window).width();
     var layout = {
       autosize: false,
-      width: $(window).width(),
+      width: tot_width,
       height: 500,
       paper_bgcolor: 'rgba(0,0,0,0.0)',
       plot_bgcolor: 'rgba(0,0,0,0.0)',
