@@ -51,8 +51,6 @@ function fun_3dPlot() {
    tot_width = $(window).width()*0.8;
     var layout = {
       autosize: true,
-      width: tot_width,
-      height: 500,
       paper_bgcolor: 'rgba(0,0,0,0.0)',
       plot_bgcolor: 'rgba(0,0,0,0.0)',
       font: {
