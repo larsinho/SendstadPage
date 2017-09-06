@@ -46,7 +46,7 @@ function fun_3dPlot() {
 
     var layout = {
       autosize: false,
-      width: 100%,
+      width: 500,
       height: 500,
       paper_bgcolor: 'rgba(0,0,0,0.0)',
       plot_bgcolor: 'rgba(0,0,0,0.0)',
