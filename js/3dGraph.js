@@ -84,17 +84,14 @@ function fun_3dPlot() {
       autosize: false,
       width: 500,
       height: 500,
+      paper_bgcolor: 'rgba(0,0,0,0.0)',
+      plot_bgcolor: 'rgba(0,0,0,0.0)',
+      font: color: "white",
       margin: {
         l: 65,
         r: 50,
         b: 65,
         t: 90,
-        },
-        font: {
-            color: "white"
-        },
-        paper_bgcolor: 'rgba(0,0,0,0.0)',
-        plot_bgcolor: 'rgba(0,0,0,0.0)'
         }
         };
 
