@@ -1,55 +1,86 @@
+var value_regime1_analytical;
+var value_regime1_numerical;
+var value_regime2_analytical;
+var value_regime2_numerical;
+var sigma1_3d;
+var sigma2_3d;
+var sigma1_2d;
+var sigma2_2d;
+var S0_vector;
 
 
+var urlToFile = "/SendstadPage/SubPlottingScripts/value_regime1_analytical.json";
+var xhr = new XMLHttpRequest();
+xhr.open('HEAD', urlToFile, false);
+xhr.send();
+if (xhr.status == "404") {
+    var promise1 = $.getJSON("../SubPlottingScripts/value_regime1_analytical.json", function(json) {
+        value_regime1_analytical = json;
+    });
+    var promise2 = $.getJSON("../SubPlottingScripts/value_regime1_numerical.json", function(json) {
+        value_regime1_numerical = json;
+    });
+    var promise3 = $.getJSON("../SubPlottingScripts/value_regime2_analytical.json", function(json) {
+        value_regime2_analytical = json;
+    });
+    var promise4 = $.getJSON("../SubPlottingScripts/value_regime2_numerical.json", function(json) {
+        value_regime2_numerical = json;
+    });
+    var promise5 = $.getJSON("../SubPlottingScripts/sigma1_2d.json", function(json) {
+        sigma1_2d = json;
+    });
+    var promise6 = $.getJSON("../SubPlottingScripts/sigma2_2d.json", function(json) {
+        sigma2_2d = json;
+    });
+    var promise7 = $.getJSON("../SubPlottingScripts/sigma1_3d.json", function(json) {
+        sigma1_3d = json;
+    });
+    var promise8 = $.getJSON("../SubPlottingScripts/sigma2_3d.json", function(json) {
+        sigma2_3d = json;
+    });
+    var promise9 = $.getJSON("../SubPlottingScripts/S0_vector.json", function(json) {
+        S0_vector = json;
+    });
+} else {
+    var promise1 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
+        value_regime1_analytical = json;
+    });
+    var promise2 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
+        value_regime1_numerical = json;
+    });
+    var promise3 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
+        value_regime2_analytical = json;
+    });
+    var promise4 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
+        value_regime2_numerical = json;
+    });
+    var promise5 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
+        sigma1_2d = json;
+    });
+    var promise6 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
+        sigma2_2d = json;
+    });
+    var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_3d.json", function(json) {
+        sigma1_3d = json;
+    });
+    var promise8 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_3d.json", function(json) {
+        sigma2_3d = json;
+    });
+    var promise9 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
+        S0_vector = json;
+    });
+};
 
-
-
-var  value_regime1_analytical;
-var  value_regime1_numerical;
-var  value_regime2_analytical;
-var  value_regime2_numerical;
-var  sigma1_3d;
-var  sigma2_3d;
-var  sigma1_2d;
-var  sigma2_2d;
-var  S0_vector;
-
-var promise1 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
-    value_regime1_analytical = json;
-});
-var promise2 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
-    value_regime1_numerical = json;
-});
-var promise3 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
-    value_regime2_analytical = json;
-});
-var promise4 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
-    value_regime2_numerical = json;
-});
-var promise5 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
-    sigma1_2d = json;
-});
-var promise6 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
-    sigma2_2d = json;
-});
-var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_3d.json", function(json) {
-    sigma1_3d = json;
-});
-var promise8 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_3d.json", function(json) {
-    sigma2_3d = json;
-});
-var promise9 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
-    S0_vector = json;
-});
 
 
 
 // executes code when all JSON files are received
 Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7, promise8, promise9]).then(
-  function(){
-      //fun_2dPlot();
-      fun_3dPlot()
-      console.log('"change1"')
-  });
+    function() {
+        //fun_2dPlot();
+        fun_3dPlot()
+        console.log('"change2"')
+    });
 
 
 /*
