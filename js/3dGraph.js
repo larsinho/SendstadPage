@@ -57,10 +57,10 @@ function fun_3dPlot() {
           color: "white"
       },
       margin: {
-        l: 65,
-        r: 50,
-        b: 65,
-        t: 90,
+        l: 0,
+        r: 0,
+        b: 0,
+        t: 0,
         }
         };
 
