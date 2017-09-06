@@ -1,28 +1,4 @@
-// General caclulations
-//---------------------
-
-
-
-
-
-var scriptSize = 20
-
-// follower 12
-//---------------------
-
-
-var value_regime1_analytical;
-var value_regime1_numerical;
-var value_regime2_analytical;
-var value_regime2_numerical;
-var sigma1_3d;
-var sigma2_3d;
-var sigma1_2d;
-var sigma2_2d;
-var S0_vector;
-
-
-function fun_3dPlot() {
+function fun_2dPlot() {
     /*
     new_array[temp_i][jj] = arr_temp;
     */
@@ -192,13 +168,3 @@ var promise6 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", func
 var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
     S0_vector = json;
 });
-
-
-
-// executes code when all JSON files are received
-Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7]).then(
-  function(){
-      //fun_2dPlot();
-      fun_3dPlot()
-      console.log('"fun_3dPlot"')
-  });
