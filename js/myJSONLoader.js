@@ -31,14 +31,20 @@ var promise5 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", func
 var promise6 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
     sigma2_2d = json;
 });
-var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
+var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_3d.json", function(json) {
+    sigma1_3d = json;
+});
+var promise8 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_3d.json", function(json) {
+    sigma2_3d = json;
+});
+var promise9 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
     S0_vector = json;
 });
 
 
 
 // executes code when all JSON files are received
-Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7]).then(
+Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7, promise8, promise9]).then(
   function(){
       //fun_2dPlot();
       fun_3dPlot()
