@@ -45,7 +45,6 @@ function fun_3dPlot() {
     }
 
     var layout = {
-      title: 'Mt Bruno Elevation',
       autosize: false,
       width: 100%,
       height: 500,
