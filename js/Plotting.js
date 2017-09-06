@@ -171,25 +171,25 @@ function fun_main() {
 };
 
 // Loads JSON async
-var promise1 = $.getJSON("../SubPlottingScripts/value_regime1_analytical.json", function(json) {
+var promise1 = $.getJSON("/SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
 });
-var promise2 = $.getJSON("../SubPlottingScripts/value_regime1_numerical.json", function(json) {
+var promise2 = $.getJSON("/SubPlottingScripts/value_regime1_numerical.json", function(json) {
     value_regime1_numerical = json;
 });
-var promise3 = $.getJSON("../SubPlottingScripts/value_regime2_analytical.json", function(json) {
+var promise3 = $.getJSON("/SubPlottingScripts/value_regime2_analytical.json", function(json) {
     value_regime2_analytical = json;
 });
-var promise4 = $.getJSON("../SubPlottingScripts/value_regime2_numerical.json", function(json) {
+var promise4 = $.getJSON("/SubPlottingScripts/value_regime2_numerical.json", function(json) {
     value_regime2_numerical = json;
 });
-var promise5 = $.getJSON("../SubPlottingScripts/sigma1_2d.json", function(json) {
+var promise5 = $.getJSON("/SubPlottingScripts/sigma1_2d.json", function(json) {
     sigma1_2d = json;
 });
-var promise6 = $.getJSON("../SubPlottingScripts/sigma2_2d.json", function(json) {
+var promise6 = $.getJSON("/SubPlottingScripts/sigma2_2d.json", function(json) {
     sigma2_2d = json;
 });
-var promise7 = $.getJSON("../SubPlottingScripts/S0_vector.json", function(json) {
+var promise7 = $.getJSON("/SubPlottingScripts/S0_vector.json", function(json) {
     S0_vector = json;
 });
 
