@@ -21,15 +21,15 @@ function fun_3dPlot() {
     var data_z2 = {z: matrixLoop(value_regime1_numerical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
-                            showscale: false, opacity:0.99, type: 'surface'};
+                            showscale: false, opacity:0.0, type: 'surface'};
     var data_z3 = {z: matrixLoop(value_regime2_analytical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
-                             showscale: false, opacity:0.99, type: 'surface'};
+                             showscale: false, opacity:1, type: 'surface'};
     var data_z4 = {z: matrixLoop(value_regime2_numerical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
-                            showscale: false, opacity:0.99, type: 'surface'};
+                            showscale: false, opacity:1, type: 'surface'};
     var layout = {
         xaxis: {
             title: 'Sigma 1'
@@ -45,6 +45,7 @@ function fun_3dPlot() {
     }
 
     var layout = {
+      title: 'Mt Bruno Elevation',
       autosize: false,
       width: 500,
       height: 500,
