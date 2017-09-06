@@ -53,8 +53,9 @@ function fun_3dPlot() {
                              y:sigma1_3d,
                              x:sigma2_3d,
                              type: 'surface'};
-    var data_z2 = {z: z2, showscale: false, opacity:0.9, type: 'surface'};
-    var data_z3 = {z: z3, showscale: false, opacity:0.9, type: 'surface'};
+    var data_z2 = {z: matrixLoop(value_regime1_numerical,5), showscale: false, opacity:0.9, type: 'surface'};
+    var data_z3 = {z: matrixLoop(value_regime2_analytical,5), showscale: false, opacity:0.9, type: 'surface'};
+    var data_z4 = {z: matrixLoop(value_regime2_numerical,5), showscale: false, opacity:0.9, type: 'surface'};
     var layout = {
         xaxis: {
             title: 'Sigma 1'
@@ -68,7 +69,7 @@ function fun_3dPlot() {
         paper_bgcolor: 'rgba(0,0,0,0.0)',
         plot_bgcolor: 'rgba(0,0,0,0.0)'
     }
-    Plotly.newPlot('myDiv', [data_z1], layout);
+    Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3, data_z4], layout);
 
 
     // ---------------- 2D Plot -----------------------//
