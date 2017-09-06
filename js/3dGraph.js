@@ -38,9 +38,26 @@ function fun_3dPlot() {
     var data_z1 = {z: z1, type: 'surface'};
     var data_z2 = {z: z2, showscale: false, opacity:0.9, type: 'surface'};
     var data_z3 = {z: z3, showscale: false, opacity:0.9, type: 'surface'};
+    var layout = {
+        xaxis: {
+            title: 'Output price, E',
+            size: scriptSize,
+        },
+        yaxis: {
+            title: 'Option value',
+            size: scriptSize
+        },
+        font: {
+            size: scriptSize,
+            color: "white"
+        },
+        paper_bgcolor: 'rgba(0,0,0,0.0)',
+        plot_bgcolor: 'rgba(0,0,0,0.0)'
+    }
+    Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3], layout);
 
-    Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3]);
 
+    // ---------------- 2D Plot -----------------------//
     var sigma1 = 0.25
     var sigma2 = 0.25
 
