@@ -174,7 +174,7 @@ function fun_main() {
 var promise1 = $.getJSON("/SubPlottingScripts/value_regime1_analytical.json", function(json) {
     value_regime1_analytical = json;
 });
-var promise2 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
+var promise2 = $.getJSON("/SubPlottingScripts/value_regime1_numerical.json", function(json) {
     value_regime1_numerical = json;
 });
 var promise3 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
