@@ -17,11 +17,13 @@ function fun_3dPlot() {
     var data_z1 = {z: matrixLoop(value_regime1_analytical,5),
                              y:sigma1_3d,
                              x:sigma2_3d,
-                             type: 'surface'};
+                             type: 'surface',
+                             colorscale: 'Greens',
+                            showscale: false};
     var data_z2 = {z: matrixLoop(value_regime1_numerical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
-                            showscale: false, opacity:0.0, type: 'surface'};
+                            showscale: false, opacity:1, type: 'surface'};
     var data_z3 = {z: matrixLoop(value_regime2_analytical,5),
                             y:sigma1_3d,
                             x:sigma2_3d,
