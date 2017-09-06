@@ -64,7 +64,7 @@ function fun_3dPlot() {
         }
         };
 
-    Plotly.newPlot('myDiv', [data_z1, data_z2, data_z3, data_z4], layout);
+    Plotly.newPlot('newsletter', [data_z1, data_z2, data_z3, data_z4], layout);
 
     document.getElementById("newsletter").style.padding = "30px 30px 120px 30px";
 };

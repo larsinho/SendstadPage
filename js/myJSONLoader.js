@@ -48,7 +48,7 @@ Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise
   function(){
       //fun_2dPlot();
       fun_3dPlot()
-      console.log('"change8"')
+      console.log('"change9"')
   });
 
 
