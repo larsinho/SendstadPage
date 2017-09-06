@@ -23,8 +23,12 @@ var S0_vector;
 
 
 function fun_2dPlot() {
+
+
+
+
+
     /*
-    new_array[temp_i][jj] = arr_temp;
     */
     var sigma1 = 0.25
     var sigma2 = 0.25
