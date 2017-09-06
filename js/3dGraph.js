@@ -1,4 +1,4 @@
-function fun_2dPlot() {
+function fun_3dPlot() {
     /*
     new_array[temp_i][jj] = arr_temp;
     */
@@ -145,26 +145,3 @@ function fun_2dPlot() {
 
     document.getElementById("newsletter").style.padding = "30px 30px 120px 30px";
 };
-
-
-var promise1 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
-    value_regime1_analytical = json;
-});
-var promise2 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
-    value_regime1_numerical = json;
-});
-var promise3 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
-    value_regime2_analytical = json;
-});
-var promise4 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
-    value_regime2_numerical = json;
-});
-var promise5 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
-    sigma1_2d = json;
-});
-var promise6 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
-    sigma2_2d = json;
-});
-var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
-    S0_vector = json;
-});

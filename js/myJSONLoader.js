@@ -13,7 +13,37 @@ var  sigma1_2d;
 var  sigma2_2d;
 var  S0_vector;
 
+var promise1 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_analytical.json", function(json) {
+    value_regime1_analytical = json;
+});
+var promise2 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime1_numerical.json", function(json) {
+    value_regime1_numerical = json;
+});
+var promise3 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_analytical.json", function(json) {
+    value_regime2_analytical = json;
+});
+var promise4 = $.getJSON("/SendstadPage/SubPlottingScripts/value_regime2_numerical.json", function(json) {
+    value_regime2_numerical = json;
+});
+var promise5 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma1_2d.json", function(json) {
+    sigma1_2d = json;
+});
+var promise6 = $.getJSON("/SendstadPage/SubPlottingScripts/sigma2_2d.json", function(json) {
+    sigma2_2d = json;
+});
+var promise7 = $.getJSON("/SendstadPage/SubPlottingScripts/S0_vector.json", function(json) {
+    S0_vector = json;
+});
 
+
+
+// executes code when all JSON files are received
+Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7]).then(
+  function(){
+      //fun_2dPlot();
+      fun_2dPlot()
+      console.log('"change1"')
+  });
 
 
 /*
