@@ -2,7 +2,8 @@ var tot_width;
 
 $("#regimeButton").click(function() {
     // Main plotting function
-    riskAverisonFunction();
+    $("#myCarousel").carousel('pause');
+    riskAverisonFunction();    
 });
 
 function fun_3dPlot() {
