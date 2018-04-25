@@ -2,7 +2,7 @@ var tot_width;
 
 $("#regimeButton").click(function() {
     // Main plotting function
-    $("#myCarousel").carousel('pause');
+    //$("#myCarousel").carousel('pause');
     riskAverisonFunction();    
 });
 
